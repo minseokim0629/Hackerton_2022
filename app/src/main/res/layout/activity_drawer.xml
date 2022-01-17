@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#75AC68"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/outline_home_black_24dp"
+        android:text="홈으로"
+        android:textColor="#00000000"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:id="@+id/btn_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/outline_delete_black_24dp"
+        android:text="분리수거 가이드"
+        android:textAlignment="textStart"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/outline_dashboard_black_24dp"
+        android:text="QNA 게시판"
+        android:textAlignment="textStart"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/outline_person_black_24dp"
+        android:text="마이페이지"
+        android:textAlignment="textStart"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/outline_person_black_24dp"
+        android:text="메뉴 닫기"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        app:icon="@android:drawable/btn_dialog" />
+
+</LinearLayout>
