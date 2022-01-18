@@ -31,11 +31,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:paddingTop="200dp">
+        android:paddingTop="100dp">
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="50dp"
+            android:layout_width="20dp"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:background="#75AC68"
@@ -47,8 +47,10 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:background="#75AC68"
-            android:text="사용자이름"
-            android:textAlignment="center" />
+            android:text="\n사용자이름"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -57,40 +59,40 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:paddingTop="350dp">
+        android:paddingTop="250dp">
 
         <Button
             android:id="@+id/button14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#00000000"
-            android:text="⋅ 북마크"
+            android:text="  ⋅ 북마크"
             android:textAlignment="textStart"
             android:textColor="#000000"
             android:textSize="28dp"
-            tools:text="북마크" />
+            tools:text="  ⋅ 북마크" />
 
         <Button
             android:id="@+id/button15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#00000000"
-            android:text="⋅ 내가 쓴 글"
+            android:text="  ⋅ 내가 쓴 글"
             android:textAlignment="textStart"
             android:textColor="#000000"
             android:textSize="28dp"
-            tools:text="내가 쓴 글" />
+            tools:text="  ⋅ 내가 쓴 글" />
 
         <Button
             android:id="@+id/button16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#00000000"
-            android:text="⋅ 회원 정보 수정"
+            android:text="  ⋅ 회원 정보 수정"
             android:textAlignment="textStart"
             android:textColor="#000000"
             android:textSize="28dp"
-            tools:text="회원정보수정" />
+            tools:text="  ⋅ 회원 정보 수정" />
     </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
