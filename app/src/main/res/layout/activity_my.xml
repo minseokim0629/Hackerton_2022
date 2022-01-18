@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/outline_dehaze_black_24dp"
+            android:text="슬라이드바"
+            android:textColor="#00FFFFFF" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/activity_drawer"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="200dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#75AC68"
+            app:srcCompat="@drawable/outline_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#75AC68"
+            android:text="사용자이름"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="350dp">
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="⋅ 북마크"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="28dp"
+            tools:text="북마크" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="⋅ 내가 쓴 글"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="28dp"
+            tools:text="내가 쓴 글" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="⋅ 회원 정보 수정"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="28dp"
+            tools:text="회원정보수정" />
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

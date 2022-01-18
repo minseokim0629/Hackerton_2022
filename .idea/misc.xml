@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/yt430/AndroidStudioProjects/QnA/app/src/main/res/layout/activity_camera.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/yt430/AndroidStudioProjects/QnA/app/src/main/res/layout/activity_drawer.xml" value="0.20208333333333334" />
         <entry key="..\:/Users/yt430/AndroidStudioProjects/QnA/app/src/main/res/layout/activity_list.xml" value="0.10144927536231885" />
         <entry key="..\:/Users/yt430/AndroidStudioProjects/QnA/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/yt430/AndroidStudioProjects/QnA/app/src/main/res/layout/activity_main.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/yt430/AndroidStudioProjects/QnA/app/src/main/res/layout/activity_my.xml" value="0.20208333333333334" />
         <entry key="..\:/Users/yt430/AndroidStudioProjects/QnA/app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="..\:/Users/yt430/AndroidStudioProjects/QnA/app/src/main/res/layout/custom_comment.xml" value="0.1" />
       </map>
