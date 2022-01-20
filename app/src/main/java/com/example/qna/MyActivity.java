@@ -1,5 +1,6 @@
 package com.example.qna;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -30,58 +31,85 @@ public class MyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
 
-    drawerLayout=(DrawerLayout) findViewById(R.id.drawer_layout);
-    drawerView = (View)findViewById(R.id.drawer);
+        drawerLayout=(DrawerLayout) findViewById(R.id.drawer_layout);
+        drawerView = (View)findViewById(R.id.drawer);
 
-    Button btn_open = (Button)findViewById(R.id.btn_open);
-        btn_open.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            drawerLayout.openDrawer(drawerView);
-        }
-    });
-
-    Button btn_home=(Button)findViewById(R.id.btn_home);
-        btn_home.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            //drawerLayout.closeDrawers();
-            Intent intent = new Intent(MyActivity.this, MainActivity.class);
-            startActivity(intent);
-        }
-    });
-
-    Button btn_close = (Button)findViewById(R.id.btn_close);
-        btn_close.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            drawerLayout.closeDrawers();
-        }
-    });
-
-        drawerLayout.setDrawerListener(listener);
-        drawerView.setOnTouchListener(new View.OnTouchListener() {
-        @Override
-        public boolean onTouch(View view, MotionEvent motionEvent) {
-            return true;
-        }
-    });
-
-    //SearchView searchView = findViewById(R.id.search_view);
-    // TextView resultTextView = findViewById(R.id.textView);
-        /*resultTextView.setText(getResult());
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        Button btn_open = (Button)findViewById(R.id.btn_open);
+            btn_open.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
+            public void onClick(View view) {
+                drawerLayout.openDrawer(drawerView);
             }
+        });
 
+        Button btn_home=(Button)findViewById(R.id.btn_home);
+            btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onQueryTextChange(String newText) { // 바로바로 변함
-                resultTextView.setText(search(newText));
+            public void onClick(View view) {
+                //drawerLayout.closeDrawers();
+                Intent intent = new Intent(MyActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+            Button btn_first = (Button)findViewById(R.id.btn_first);
+            btn_first.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MyActivity.this,CategoryActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            Button btn_second = (Button)findViewById(R.id.btn_second);
+            btn_second.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MyActivity.this,ListActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            Button btn_thrid = (Button)findViewById(R.id.btn_third);
+            btn_thrid.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MyActivity.this, MyActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+        Button btn_close = (Button)findViewById(R.id.btn_close);
+            btn_close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawerLayout.closeDrawers();
+            }
+        });
+
+            drawerLayout.setDrawerListener(listener);
+            drawerView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
                 return true;
             }
-        });*/
+        });
+
+        //SearchView searchView = findViewById(R.id.search_view);
+        // TextView resultTextView = findViewById(R.id.textView);
+            /*resultTextView.setText(getResult());
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    return false;
+                }
+
+                @Override
+                public boolean onQueryTextChange(String newText) { // 바로바로 변함
+                    resultTextView.setText(search(newText));
+                    return true;
+                }
+            });*/
 }
 
     DrawerLayout.DrawerListener listener = new DrawerLayout.DrawerListener() {

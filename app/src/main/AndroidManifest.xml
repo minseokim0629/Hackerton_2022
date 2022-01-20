@@ -15,27 +15,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".CategoryActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CameraActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MyActivity"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
-            android:name=".DetailActivity"
-            android:exported="false" />
+            android:name=".CameraActivity"
+            android:exported="true" />
+            <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="com.example.qna"
+                android:exported="false"
+                android:grantUriPermissions="true">
+                <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths" />
+            </provider>
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="true" />
         <activity
             android:name=".ListActivity"
-            android:exported="false" />
+            android:exported="true" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true" />
         <activity
             android:name=".WriteActivity"
-            android:exported="false" />
+            android:exported="true" />
+        <activity
+            android:name=".MyActivity"
+            android:exported="true" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true" />
@@ -48,16 +58,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.qna"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
-        </provider>
     </application>
 
 </manifest>

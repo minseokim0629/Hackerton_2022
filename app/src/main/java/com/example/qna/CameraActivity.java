@@ -103,7 +103,7 @@ public class CameraActivity extends AppCompatActivity {
         btn_third.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CameraActivity.this, CameraActivity.class);
+                Intent intent = new Intent(CameraActivity.this, MyActivity.class);
                 startActivity(intent);
             }
         });
@@ -113,7 +113,7 @@ public class CameraActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //drawerLayout.closeDrawers();
-                Intent intent = new Intent(CameraActivity.this, MyActivity.class);
+                Intent intent = new Intent(CameraActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

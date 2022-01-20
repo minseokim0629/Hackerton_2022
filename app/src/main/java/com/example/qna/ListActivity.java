@@ -3,6 +3,7 @@ package com.example.qna;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ListView;
 
 public class ListActivity extends AppCompatActivity {
 

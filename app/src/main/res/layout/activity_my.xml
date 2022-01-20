@@ -25,8 +25,6 @@
 
     </LinearLayout>
 
-    <include layout="@layout/activity_drawer"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -94,5 +92,7 @@
             android:textSize="28dp"
             tools:text="  ⋅ 회원 정보 수정" />
     </LinearLayout>
+
+    <include layout="@layout/activity_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

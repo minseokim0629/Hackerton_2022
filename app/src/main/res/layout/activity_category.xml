@@ -47,6 +47,14 @@
             android:textColor="#00FFFFFF" />
 
     </LinearLayout>
-    <include layout="@layout/activity_drawer"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp"/>
+
+    <include layout="@layout/activity_drawer" />
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
