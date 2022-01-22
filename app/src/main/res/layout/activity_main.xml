@@ -5,50 +5,114 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btn_open"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="#00000000"
-            android:drawableLeft="@drawable/outline_dehaze_black_24dp"
-            android:text="슬라이드바"
-            android:textColor="#00FFFFFF" />
-
-
-        <SearchView
-            android:id="@+id/search_view"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:background="#9DD288"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_open"
+                    android:layout_width="40dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="3dp"
+                    android:layout_gravity="start|center"
+                    android:background="@drawable/outline_dehaze_black_24dp" />
+                <SearchView
+                    android:id="@+id/search_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ECFDD8"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="50dp"
+                        android:text="TextView" />
+                </SearchView>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+                <Button
+                    android:id="@+id/btn_camera"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:gravity="right"
+                    android:background ="@drawable/ic_baseline_photo_camera_24" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="50dp"
                 android:layout_weight="1"
-                android:paddingTop="50dp"
-                android:text="TextView" />
-        </SearchView>
-
-        <Button
-            android:id="@+id/btn_camera"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="#00000000"
-            android:drawableRight="@drawable/outline_photo_camera_black_24dp"
-            android:text="카메라"
-            android:textColor="#00FFFFFF" />
-
-    </LinearLayout>
-
+                android:src="@drawable/background"></ImageView>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border_round"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/custom_font_family"
+                    android:orientation="vertical"
+                    >
+                <TextView
+                    android:fontFamily="@font/custom_font_family"
+                    android:id="@+id/exp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="22dp"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="4dp"
+                    android:text="카메라로 물건을 촬영해서\n재활용 방법을 알아봅시다"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/exp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/custom_font_family"
+                    android:text=" * 메뉴 설명"
+                    >
+                </TextView>
+                </LinearLayout>
+        </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
     <include layout="@layout/activity_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private List<String> items = Arrays.asList("종이", "플라스틱", "유리", "유리조각", "비닐");
 
-
+    TextView text1;
     private DrawerLayout drawerLayout;
     private View drawerView;
 
@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawerView = (View) findViewById(R.id.drawer);
 
+        text1 = (TextView) findViewById(R.id.exp2);
+        text1.setText(" * 카메라로 촬영하면 물건의 분리수거 방법이 출력됩니다.\n" +
+                " * 분리수거 가이드에는 모든 쓰레기의 분리수거 방법을 설명하고 있습니다.\n" +
+                " * qna 게시판에서는 서로와 소통하며 자신이 궁금한 점을 물어볼 수 있습니다.\n" +
+                " * 상점에서는 마일리지로 각종 업사이클링 상품을 구매하실 수 있습니다.\n");
         Button btn_open = (Button) findViewById(R.id.btn_open);
         btn_open.setOnClickListener(new View.OnClickListener() {
             @Override
