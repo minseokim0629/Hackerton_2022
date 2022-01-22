@@ -65,7 +65,6 @@ public class CameraActivity extends AppCompatActivity {
 
         TextView keyword = (TextView) findViewById(R.id.textView2);
 
-        //View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recyclerview, parent, false);
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawerView = (View) findViewById(R.id.drawer);
@@ -184,7 +183,8 @@ public class CameraActivity extends AppCompatActivity {
                         photoUri = FileProvider.getUriForFile(getApplicationContext(), getPackageName(), photoFile);
                         intent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
                         startCamera.launch(intent);
-
+                        keyword.setText( "페트병 - 내용물을 비우고, 겉에 붙은 비닐 라벨을 깨끗이 제거하고 압착 후 뚜껑을 닫아 유색페트병은 플라스틱으로, 투명페트병은 별도로 분리해주세요." +
+                                " 단, 뚜껑을 닫지 않고도 충분히 압착 및 이물질을 제거한 상태라면 뚜껑을 닫지 않고 배출해도 됩니다." );
                     }
                 }
             }
