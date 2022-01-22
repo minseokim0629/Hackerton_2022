@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:background="#75AC68"
+            android:background="#ECFDD8"
             android:foreground="@drawable/outline_person_black_24dp" />
 
         <LinearLayout
@@ -49,10 +49,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#75AC68"
+                android:background="#ECFDD8"
                 android:fontFamily="@font/custom_font_family"
                 android:gravity="bottom"
                 android:text="ECoding"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -61,8 +62,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/black"
                 android:fontFamily="@font/custom_font_family"
-                android:background="#75AC68"
+                android:background="#ECFDD8"
                 android:text="마일리지 : 500pt" />
 
         </LinearLayout>
@@ -80,13 +82,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#75AC68">
+            android:background="#ECFDD8">
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:background="#75AC68"
+                android:background="#ECFDD8"
                 android:paddingLeft="10dp"
                 app:srcCompat="@drawable/outline_star_border_black_24dp" />
 
@@ -95,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/custom_font_family"
-                android:background="#75AC68"
+                android:background="#ECFDD8"
                 android:gravity="bottom"
                 android:text="북마크"
                 android:textColor="#000000"
@@ -107,13 +109,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#75AC68">
+            android:background="#ECFDD8">
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/imageView5"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:background="#75AC68"
+                android:background="#ECFDD8"
                 android:paddingLeft="10dp"
                 app:srcCompat="@drawable/outline_star_border_black_24dp" />
 
@@ -122,7 +124,7 @@
                 android:id="@+id/btn_mywriting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#75AC68"
+                android:background="#ECFDD8"
                 android:text="내가 쓴 글"
                 android:gravity="bottom"
                 android:textColor="#000000"
@@ -133,13 +135,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#75AC68">
+            android:background="#ECFDD8">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:background="#75AC68"
+                android:background="#ECFDD8"
                 android:paddingLeft="10dp"
                 app:srcCompat="@drawable/outline_star_border_black_24dp" />
 
@@ -148,7 +150,7 @@
                 android:id="@+id/button18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#75AC68"
+                android:background="#ECFDD8"
                 android:text="회원 정보 수정"
                 android:gravity="bottom"
                 android:textColor="#000000"

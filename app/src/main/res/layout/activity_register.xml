@@ -67,6 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/custom_font_family"
+            android:background="@drawable/border_round"
             android:text="회원가입"
             app:layout_constraintEnd_toEndOf="@+id/et_age"
             app:layout_constraintStart_toStartOf="@+id/et_age"

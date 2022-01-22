@@ -5,7 +5,7 @@
     android:layout_width="240dp"
     android:layout_height="match_parent"
     android:layout_gravity="start"
-    android:background="#75AC68"
+    android:background="#ECFDD8"
     android:orientation="vertical">
 
     <Button
