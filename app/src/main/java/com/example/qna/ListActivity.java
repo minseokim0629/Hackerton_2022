@@ -8,7 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -153,10 +152,10 @@ public class ListActivity extends AppCompatActivity {
         postView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-                Toast.makeText(getApplicationContext(), posts[arg2],
-                        Toast.LENGTH_SHORT).show();
-                //Intent intent = new Intent(ListActivity.this, DetailActivity.class);
-                //startActivity(intent);
+                //Toast.makeText(getApplicationContext(), posts[arg2],
+                     //   Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(ListActivity.this, DetailActivity.class);
+                startActivity(intent);
             }
         });
         //myRecyclerAdapter = new MyRecyclerAdapter(PList);
