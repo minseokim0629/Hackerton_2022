@@ -12,6 +12,7 @@
 
         <!--이름-->
         <TextView
+            android:fontFamily="@font/custom_font_family"
             android:id="@+id/trash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,6 +24,7 @@
 
         <!--상태 메시지-->
         <TextView
+            android:fontFamily="@font/custom_font_family"
             android:id="@+id/recycle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

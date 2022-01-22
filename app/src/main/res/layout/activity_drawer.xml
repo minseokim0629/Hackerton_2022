@@ -25,8 +25,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="#00000000"
+        android:fontFamily="@font/custom_font_family"
         android:drawableLeft="@drawable/outline_delete_black_24dp"
-        android:text="분리수거 가이드"
+        android:text=" 분리수거 가이드"
         android:textAlignment="textStart"
         android:textColor="#000000" />
 
@@ -35,9 +36,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:fontFamily="@font/custom_font_family"
         android:background="#00000000"
         android:drawableLeft="@drawable/outline_dashboard_black_24dp"
-        android:text="QNA 게시판"
+        android:text=" QNA 게시판"
+        android:textAlignment="textStart"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/custom_font_family"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/ic_baseline_store_24"
+        android:text=" 상점"
         android:textAlignment="textStart"
         android:textColor="#000000" />
 
@@ -47,8 +61,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="#00000000"
+        android:fontFamily="@font/custom_font_family"
         android:drawableLeft="@drawable/outline_person_black_24dp"
-        android:text="마이페이지"
+        android:text=" 마이페이지"
         android:textAlignment="textStart"
         android:textColor="#000000" />
 
@@ -58,8 +73,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="#00000000"
+        android:fontFamily="@font/custom_font_family"
         android:drawableLeft="@drawable/outline_person_black_24dp"
-        android:text="메뉴 닫기"
+        android:text=" 메뉴 닫기"
         android:textAlignment="textStart"
         android:textColor="#000000"
         app:icon="@android:drawable/btn_dialog" />

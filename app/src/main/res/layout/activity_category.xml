@@ -55,6 +55,7 @@
         android:paddingTop="60dp"
         android:scrollbarFadeDuration="0"
         android:scrollbarSize="5dp"
+        android:fontFamily="@font/custom_font_family"
         android:scrollbarThumbVertical="@android:color/darker_gray"
         android:scrollbars="vertical"/>
 
