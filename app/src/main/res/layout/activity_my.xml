@@ -86,6 +86,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#00000000"
+            android:text="  ⋅ 마일리지 확인"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="28dp"
+            tools:text="  ⋅ 마일리지 확인" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="  ⋅ 상점"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="28dp"
+            tools:text="  ⋅ 상점" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
             android:text="  ⋅ 회원 정보 수정"
             android:textAlignment="textStart"
             android:textColor="#000000"
