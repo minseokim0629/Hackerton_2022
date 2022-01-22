@@ -1,7 +1,5 @@
 package com.example.qna;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 
 public class WriteActivity extends AppCompatActivity {
     TextView Title;
@@ -21,13 +20,10 @@ public class WriteActivity extends AppCompatActivity {
         reg_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Title = (TextView) findViewById(R.id.Title);
-                Content = (TextView) findViewById(R.id.Content);
-
-                Toast.makeText(getApplicationContext(), "등록되었습니다.",
-                        Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(WriteActivity.this, ListActivity.class);
                 startActivity(intent);
+                Toast.makeText(getApplicationContext(), "등록되었습니다.",
+                       Toast.LENGTH_SHORT).show();
             }
         });
     }

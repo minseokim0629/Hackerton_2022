@@ -5,24 +5,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <androidx.drawerlayout.widget.DrawerLayout
-            android:layout_width="wrap_content"
-            android:layout_height="50dp">
-            <Button
-                android:id="@+id/btn_open"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:background="#00000000"
-                android:drawableLeft="@drawable/outline_dehaze_black_24dp"
-                android:text="슬라이드바"
-                android:textColor="#00FFFFFF" />
-        </androidx.drawerlayout.widget.DrawerLayout>
-    </LinearLayout>
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/outline_dehaze_black_24dp"
+        android:text="슬라이드바"
+        android:textColor="#00FFFFFF" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,13 +38,12 @@
 
                 <TextView
                     android:id="@+id/title_tv"
-                    android:padding="16dp"
-                    android:background="#eeeeee"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="제목입니다."
-                    />
+                    android:background="#eeeeee"
+                    android:padding="16dp"
+                    android:text="장난감은 어떻게 분리배출하나요?" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -68,13 +58,12 @@
 
                 <TextView
                     android:id="@+id/date_tv"
-                    android:padding="16dp"
-                    android:background="#eeeeee"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="제목입니다."
-                    />
+                    android:background="#eeeeee"
+                    android:padding="16dp"
+                    android:text="2022-01-20 오후 11:34" />
             </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
@@ -84,12 +73,11 @@
 
             <TextView
                 android:id="@+id/content_tv"
-                android:padding="16dp"
-                android:background="#eeeeee"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="내용입니다."
-                />
+                android:background="#eeeeee"
+                android:padding="16dp"
+                android:text="오래된 장난감이 있어 버리려고 하는데\n혹시 어떻게 분리배출해야 할까요?" />
 
             <TextView
                 android:padding="16dp"
@@ -101,29 +89,57 @@
             <LinearLayout
                 android:id="@+id/comment_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:orientation="vertical"/>
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="그러게요.. 저도 항상 궁금했는데!"
+                        android:textAlignment="gravity" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:drawableRight="@drawable/outline_question_answer_black_24dp"
+                        android:text="댓글달기"
+                        android:textColor="#00000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:text="혹시 장난감이 어떻게 구성되어 있나요?"
+                        android:textAlignment="gravity" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:drawableRight="@drawable/outline_question_answer_black_24dp"
+                        android:text="댓글"
+                        android:textColor="#00000000" />
+                </LinearLayout>
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/comment_et"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:layout_height="wrap_content"
-            android:background="#eeeeee"
-            android:layout_weight="1"
-            android:hint="댓글 내용을 입력하세요"/>
-        <Button
-            android:id="@+id/reg_button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:padding="8dp"
-            android:text="등록하기"/>
-    </LinearLayout>
 </LinearLayout>
