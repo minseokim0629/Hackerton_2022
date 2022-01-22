@@ -27,29 +27,46 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingTop="100dp">
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="20dp"
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:layout_weight="1"
             android:background="#75AC68"
-            app:srcCompat="@drawable/outline_person_black_24dp" />
+            android:foreground="@drawable/outline_person_black_24dp" />
 
-        <TextView
-            android:fontFamily="@font/custom_font_family"
-            android:id="@+id/user_id"
-            android:layout_width="100dp"
+        <LinearLayout
+            android:layout_width="300dp"
             android:layout_height="100dp"
-            android:layout_weight="1"
-            android:background="#75AC68"
-            android:text="\n사용자이름"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#75AC68"
+                android:fontFamily="@font/custom_font_family"
+                android:gravity="bottom"
+                android:text="ECoding"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font_family"
+                android:background="#75AC68"
+                android:text="마일리지 : 500pt" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
@@ -60,54 +77,89 @@
         android:orientation="vertical"
         android:paddingTop="250dp">
 
-        <Button
-            android:fontFamily="@font/custom_font_family"
-            android:id="@+id/button14"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:text="  ⋅ 북마크"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="28dp"
-            tools:text="  ⋅ 북마크" />
+            android:layout_height="50dp"
+            android:background="#75AC68">
 
-        <Button
-            android:fontFamily="@font/custom_font_family"
-            android:id="@+id/button15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:text="  ⋅ 내가 쓴 글"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="28dp"
-            tools:text="  ⋅ 내가 쓴 글" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#75AC68"
+                android:paddingLeft="10dp"
+                app:srcCompat="@drawable/outline_star_border_black_24dp" />
 
-        <Button
-            android:fontFamily="@font/custom_font_family"
-            android:id="@+id/button16"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:text="  ⋅ 마일리지 확인"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="28dp"
-            tools:text="  ⋅ 마일리지 확인" />
+            <Button
+                android:id="@+id/btn_bookmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_font_family"
+                android:background="#75AC68"
+                android:gravity="bottom"
+                android:text="북마크"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+        </LinearLayout>
 
 
-        <Button
-            android:fontFamily="@font/custom_font_family"
-            android:id="@+id/button18"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:text="  ⋅ 회원 정보 수정"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="28dp"
-            tools:text="  ⋅ 회원 정보 수정" />
+            android:layout_height="50dp"
+            android:background="#75AC68">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#75AC68"
+                android:paddingLeft="10dp"
+                app:srcCompat="@drawable/outline_star_border_black_24dp" />
+
+            <Button
+                android:fontFamily="@font/custom_font_family"
+                android:id="@+id/btn_mywriting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#75AC68"
+                android:text="내가 쓴 글"
+                android:gravity="bottom"
+                android:textColor="#000000"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#75AC68">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#75AC68"
+                android:paddingLeft="10dp"
+                app:srcCompat="@drawable/outline_star_border_black_24dp" />
+
+            <Button
+                android:fontFamily="@font/custom_font_family"
+                android:id="@+id/button18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#75AC68"
+                android:text="회원 정보 수정"
+                android:gravity="bottom"
+                android:textColor="#000000"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+
+
+
+
+
     </LinearLayout>
 
     <include layout="@layout/activity_drawer" />

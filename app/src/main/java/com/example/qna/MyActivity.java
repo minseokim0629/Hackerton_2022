@@ -70,8 +70,8 @@ public class MyActivity extends AppCompatActivity {
                 }
             });
 
-            Button btn_thrid = (Button)findViewById(R.id.btn_third);
-            btn_thrid.setOnClickListener(new View.OnClickListener() {
+            Button btn_third = (Button)findViewById(R.id.btn_third);
+            btn_third.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(MyActivity.this, MyActivity.class);
@@ -84,6 +84,24 @@ public class MyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 drawerLayout.closeDrawers();
+            }
+        });
+
+        Button btn_bookmark = (Button)findViewById(R.id.btn_bookmark);
+        btn_bookmark.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MyActivity.this, BookmarkActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn_mywriting = (Button)findViewById(R.id.btn_mywriting);
+        btn_mywriting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MyActivity.this, MywritingActivity.class);
+                startActivity(intent);
             }
         });
 
