@@ -3,26 +3,34 @@ package com.example.qna;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.net.HttpURLConnection;
-import java.net.URL;
-
-import javax.net.ssl.HttpsURLConnection;
 
 public class WriteActivity extends AppCompatActivity {
+    TextView Title;
+    TextView Content;
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_write);
+
+        Button reg_button = (Button) findViewById(R.id.reg_button);
+        reg_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Title = (TextView) findViewById(R.id.Title);
+                Content = (TextView) findViewById(R.id.Content);
+
+                Toast.makeText(getApplicationContext(), "등록되었습니다.",
+                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(WriteActivity.this, ListActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 //
 //    // 로그에 사용할 TAG 변수 선언
 //    final private String TAG = getClass().getSimpleName();
