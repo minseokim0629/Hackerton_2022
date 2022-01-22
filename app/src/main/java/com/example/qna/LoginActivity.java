@@ -69,11 +69,16 @@ public class LoginActivity extends AppCompatActivity {
                                 return;
                             }
                         } catch (JSONException e) {
-                            Log.d("3","error-----");
                             e.printStackTrace();
                         }
                     }
                 };
+                Toast.makeText(getApplicationContext(),"로그인에 성공하였습니다.",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                intent.putExtra("userID",login_id);
+                intent.putExtra("userPass",pass);
+                startActivity(intent);
+
                 LoginRequest loginRequest = new LoginRequest(login_id, pass,responseListener);
                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
                 queue.add(loginRequest);
