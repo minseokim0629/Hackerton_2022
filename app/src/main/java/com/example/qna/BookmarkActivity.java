@@ -13,7 +13,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
 
@@ -25,17 +28,11 @@ import java.util.List;
 public class BookmarkActivity extends AppCompatActivity {
 
     private List<String> items = Arrays.asList("종이", "플라스틱", "유리", "유리조각", "비닐");
-    private List<String> trash = Arrays.asList("계란껍데기","유리병","스티로폼", "장난감");
-    private List<String> recycle = Arrays.asList("사료나 퇴비로 만들 수 없으므로 일반 종량제 봉투로 배출해주세요.",
-            "플라스틱이나 알루미늄 뚜껑 제거 후 내용물을 깨끗이 비운 후 배출해주세요.\n깨진 유리는 신문지에 싸서 종량제 봉투에 버리고, 양이 많을 경우 특수구격마대(불연물질)를 구매하여 배출해주세요.",
-            "내용물을 비우고 물로 헹구는 등 이물질을 제거하여 배출해주세요.\n음식물 등의 이물질이 묻은 경우 일반 종량제 봉투로 배출해주세요.",
-            "재질별로 분리 후 재활용품으로 배출해주세요.\n재질별 분리가 어려울 경우 일반 쓰레기로 배출하시고, 대형 완구류는 대형 폐기물로 신고 후, 배출수수료를 납부하고 배출해야합니다.");
+    public String[] posts = {"장난감은 어떻게 분리배출하나요?",
+            "분리수거 시간이 궁금해요!",
+    };
 
-
-    private ArrayList<TrashList> TList;
-    private MyRecyclerAdapter myRecyclerAdapter;
-    private RecyclerView recyclerView;
-    private LinearLayoutManager linearLayoutManager;
+    private ListView postView;
 
     private DrawerLayout drawerLayout;
     private View drawerView;
@@ -126,20 +123,22 @@ public class BookmarkActivity extends AppCompatActivity {
             }
         });
 
-        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
-        linearLayoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(linearLayoutManager);
+        postView = (ListView)findViewById(R.id.postView);
+        //linearLayoutManager = new LinearLayoutManager(this);
+        //postView.setLayoutManager(linearLayoutManager);
+        //PList = new ArrayList<>();
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, posts);
+        postView.setAdapter(adapter);
 
-        TList = new ArrayList<>();
-
-        myRecyclerAdapter = new MyRecyclerAdapter(TList);
-        recyclerView.setAdapter(myRecyclerAdapter);
-
-        for(int i=0; i<=3; i++)
-        {
-            TList.add(new TrashList(trash.get(i),recycle.get(i)));
-        }
-        myRecyclerAdapter.notifyDataSetChanged();
+        postView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+                //Toast.makeText(getApplicationContext(), posts[arg2],
+                //   Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(BookmarkActivity.this, DetailActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     DrawerLayout.DrawerListener listener = new DrawerLayout.DrawerListener() {

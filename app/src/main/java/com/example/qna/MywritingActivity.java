@@ -30,11 +30,7 @@ public class MywritingActivity extends AppCompatActivity {
             "내일이 분리수거하는 날 맞나요?"
     };
 
-
-    private ArrayList<PostList> PList;
-    private MyRecyclerAdapter myRecyclerAdapter;
     private ListView postView;
-    private LinearLayoutManager linearLayoutManager;
 
     private DrawerLayout drawerLayout;
     private View drawerView;
