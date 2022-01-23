@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".BookmarkActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
         android:fontFamily="@font/custom_font_family"
         android:paddingLeft="10dp"
         android:paddingTop="60dp"
-        android:text="Ecoding님의 북마크"
+        android:text="ECOding님의 북마크"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"></TextView>
