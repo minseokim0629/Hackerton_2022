@@ -6,7 +6,6 @@
 <br>
 
 ## 👬 팀 소개
----------
 **ECOding : ECO + coding을 합쳐 환경을 생각하며 코딩하겠다는 뜻**
 
 <br>
@@ -31,7 +30,6 @@
 <br>
 
 ## 💡 제작 배경
-------------
 1. 코로나 19로 인해 증가한 쓰레기
     - 코로나 19가 지속되면서 배달 증가로 인한 일회용기 사용이 증가하였지만, 분리배출이 제대로 되지 않아 50% 이상이 소각된다.
 2. 분리수거 기준의 변화
@@ -45,7 +43,6 @@
 <br>
 
 ## 💡 아이템 소개
-------------
 <img width = "250" src = "https://user-images.githubusercontent.com/77006790/150676458-02b28c43-ca9b-4455-be96-bd6595abd651.png" >
 
 **에코 버디**
@@ -61,7 +58,6 @@
 <br>
 
 ## 📱 기능
-------
 * 회원 가입, 로그인
 
 * 촬영 - 쓰레기 코멘트
@@ -78,7 +74,6 @@
 <br>
 
 ## 📱 어플 구현 사진
-------
 
 ![image](https://user-images.githubusercontent.com/77006790/150676234-dc1d73f7-2077-4bc6-82e0-b169702d865f.png)
 
@@ -89,7 +84,7 @@
 <br>
 
 ## ✨ 기대 효과 및 향후 발전 계획
---------
+
 1. GPS 기능을 통해 지역별 분리수거 기준에 맞게 자동 코멘트를 보여준다.
 2. 학습 모델을 변경하여 분리수거 기준을 커스틈 가능하도록 한다.
 3. 사용자를 통해 쓰레기 데이터 베이스를 축적한다.
@@ -102,7 +97,7 @@
 <br>
 
 ## ✨ 수익 구조
----------
+
 ### 홍보
 1. '마일리지', '업사이클링 제품'을 키워드로 교내 재학생 대상으로 어플 홍보
 2. SNS를 통해 MZ 세대 에코 워리어를 대상으로 홍보
@@ -116,7 +111,7 @@
 <br>
 
 ## 🔎 AI, Deaplearning
---------
+
 <img width = "700" src = "https://github.com/ultralytics/yolov5/releases/download/v1.0/model_comparison.png">
 
 ### 딥러닝 모델 : yolov5 object to detection
@@ -138,7 +133,7 @@
 <br>
 
 ## 🔎 Front-End Architecture
--------
+
 <img width="700" alt="image1" src="https://user-images.githubusercontent.com/77006790/150667230-07d35470-f9f6-4352-8be2-6c365b052639.PNG">
 
 - 안드로이드 스튜디오 내에서 자바 언어를 사용하여 Activity들을 구현하고, xml 파일들을 작성하여 어플의 레이아웃 구성
@@ -178,7 +173,7 @@
 <br>
 
 ## 🔎 PHP Architecture
-------
+
 <img width="700" alt="image2" src="https://user-images.githubusercontent.com/77006790/150667601-37d2d1e2-479c-44cd-b611-1b6e0da1a7c8.png">
 
 * android studio의 보안 문제로 frontend는 데이터베이스에 직접 연결이 불가하다. 따라서 php 프로그램을 매개로 데이터베이스에 연결한다.   
@@ -197,7 +192,7 @@
 <br>
 
 ## 🔎 Back-End Architecture
---------
+
 <img width="700" alt="Untitled2" src="https://user-images.githubusercontent.com/63863627/150649526-3f0ead2d-04d4-4031-96f6-4cbe449e5a15.png">
 
 * RestController : Client의 요청을 처리하고 JSON 형태로 데이터를 반환한다.
@@ -257,7 +252,7 @@
 <br>
 
 ## 📑 ERD
-----------
+
 ![image](https://user-images.githubusercontent.com/67851124/150649138-0caf16e9-30f7-4909-b041-e813489f1962.png)
 
 ### Member Table
@@ -306,6 +301,6 @@ board|bigint(20)|NO|MUL|NULL|
 <br>
 
 ## 🛠 개발 환경
--------
+
 <img width="800" alt="Untitled 22(1)" src="https://user-images.githubusercontent.com/63863627/150652239-db62a14a-c1fe-4325-a81d-62bfb1c2aa19.png">
 
