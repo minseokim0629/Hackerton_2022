@@ -5,6 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".CameraActivity">
 
     <LinearLayout
@@ -85,10 +86,11 @@
         android:orientation="horizontal">
 
         <Button
-            android:background="#BFFF74"
+            android:background="#5EB36F"
             android:id="@+id/btn_capture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:text="촬영" />
     </LinearLayout>
 
